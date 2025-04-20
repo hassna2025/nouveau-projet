@@ -1,0 +1,380 @@
+/* public/css/child-theme.css */
+.child-theme {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f4ff;
+    color: #5a2d82;
+}
+
+header {
+    background-color: #8a4fff;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.levels-container {
+    margin-top: 2rem;
+}
+
+.level-section {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contents-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.content-card {
+    background: #f0e6ff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.3s;
+}
+
+.content-card:hover {
+    background: #e0ccff;
+}
+
+.media-container {
+    margin: 2rem 0;
+}
+
+.media-item {
+    margin-bottom: 1.5rem;
+}
+
+.media-item img, .media-item video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quiz-section {
+    background: #e0ccff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: #8a4fff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #7b3aff;
+}
+
+.quiz-question {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-check {
+    margin: 0.5rem 0;
+}
+
+.form-check-input {
+    margin-right: 0.5rem;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.category-icon {
+    animation: bounce 2s infinite;
+}
+/* Thème enfant - Style attractif */
+.child-theme {
+    font-family: 'Comic Sans MS', 'Marker Felt', 'Chalkboard SE', cursive;
+    background-color: #fff9f9;
+    color: #5a2d82;
+}
+
+/* Header joyeux */
+header {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 0L0 0 892.25 114.72 1200 0z" fill="%23fff9f9"></path></svg>');
+    background-size: cover;
+}
+
+/* Boutons interactifs */
+.btn, button[type="submit"], [type="button"] {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.btn:hover::after {
+    left: 100%;
+}
+
+/* Cartes animées */
+.category-card, .content-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card:hover, .content-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    border-color: #ff6b6b;
+}
+
+.category-card::before, .content-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #ff6b6b, #ffa3a3, #ff6b6b);
+    background-size: 200% 100%;
+    animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+/* Icônes animées */
+.category-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-15px); }
+}
+
+/* Formulaires amusants */
+input, select, textarea {
+    border: 2px solid #ffa3a3 !important;
+    border-radius: 15px !important;
+    padding: 0.8rem 1rem !important;
+    background-color: #fff9f9 !important;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff6b6b !important;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3) !important;
+}
+
+/* Bulles flottantes (décorations) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="3" fill="%23ffa3a3" opacity="0.3"/><circle cx="50" cy="40" r="4" fill="%23ff6b6b" opacity="0.2"/><circle cx="80" cy="20" r="2" fill="%23ff5252" opacity="0.3"/><circle cx="10" cy="70" r="5" fill="%23ff8e8e" opacity="0.2"/><circle cx="90" cy="80" r="3" fill="%23ff6b6b" opacity="0.3"/></svg>');
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Animations supplémentaires */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.media-item img, .media-item video, .media-item audio {
+    animation: float 3s ease-in-out infinite;
+    transition: all 0.3s;
+}
+
+.media-item:hover img, .media-item:hover video, .media-item:hover audio {
+    animation: float 1s ease-in-out infinite;
+    transform: scale(1.05);
+}
+
+/* Étoiles pour les quiz */
+.quiz-result.passed::after {
+    content: "⭐";
+    position: absolute;
+    font-size: 2rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Police spéciale pour les enfants */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+.child-theme {
+    font-family: 'Comic Neue', cursive;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+/* Effets de survol spéciaux */
+a:hover {
+    color: #ff5252 !important;
+    text-decoration: underline wavy !important;
+}
+/* Cursor personnalisé */
+.custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 0L100 50 75 75 50 100 25 75 0 50 25 25Z" fill="%23ff6b6b"/></svg>') no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: translate(-50%, -50%) scale(1); }
+    to { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+/* Désactiver le cursor par défaut */
+html, body {
+    cursor: none;
+}
+
+html:hover, body:hover {
+    cursor: none;
+}
+h1, h2, h3 {
+    position: relative;
+    display: inline-block;
+}
+
+h1::after, h2::after, h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6b6b, #ffa3a3, #ff6b6b);
+    background-size: 200% 100%;
+    animation: rainbow 2s linear infinite;
+    border-radius: 3px;
+}

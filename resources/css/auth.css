@@ -1,0 +1,33 @@
+/* Style spécifique pour les pages d'authentification */
+.auth-card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.auth-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    transform: translateY(-2px);
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}

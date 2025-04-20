@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles personnalisés */
+.btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded;
+}
+/* Dans app.css */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.invalid-feedback {
+    @apply text-red-600 text-sm mt-1 transition-all;
+}
